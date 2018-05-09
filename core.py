@@ -70,7 +70,7 @@ def get_score(img_path):
             return req.json()["content"]["text"]
 
         except Exception:
-            return req.text
+            return "好像出错了喔，要不再试一次"
 
     except Exception:
         pass
